@@ -93,6 +93,22 @@ A change is done only when all of these hold. Report the output, not a summary o
 - If a requirement is ambiguous or touches clinical logic, ask instead of guessing.
 - When a command fails, show the error and your diagnosis before retrying.
 
+## Skills
+
+Skills live in `.github/skills/<name>/SKILL.md`. Copilot loads a skill when its `description`
+matches the task; this table makes the expected use explicit. If a task matches a row, use that
+skill and follow its output format.
+
+| Skill | Use when |
+|-------|----------|
+| `ba-analyst` | A client brief or feature request arrives, before any design or code |
+| `verify-claim` | Stating how the code works, or checking a claim from a person or another agent |
+| `test-first-fix` | Fixing any bug or regression |
+| `pr-review` | Reviewing a diff, a branch or a patch from an external vendor |
+
+To add a skill: create `.github/skills/<name>/SKILL.md` with `name` (equal to the folder name)
+and `description` (what it does and when to use it), then add a row to this table.
+
 ## Useful context
 
 - ADRs in `docs/adr/` explain past decisions (e.g. ADR-004: why drift instead of sqflite). Read the

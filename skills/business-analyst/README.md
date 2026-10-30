@@ -10,6 +10,7 @@ Instrukcje są po angielsku (dla agenta), wynik powstaje w języku briefu klient
 
 | Etap | Skill | Zasada | Wynik |
 |------|-------|--------|-------|
+| 0 | `ba-analyst` | Wersja skrócona: wszystkie cztery elementy pierwszej rozmowy naraz | Decyzja, założenia, pytania, obserwacja |
 | 1 | `ba-decision-statement` | Najpierw decyzja, potem rozwiązanie | Decyzja w jednym zdaniu |
 | 2 | `ba-assumptions` | Fakt ≠ założenie ≠ niewiadoma | Rejestr założeń |
 | 3 | `ba-questions` | Pytaj tylko o to, co zmienia rekomendację | 3–5 pytań z wpływem odpowiedzi |

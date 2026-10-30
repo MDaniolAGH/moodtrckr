@@ -6,6 +6,7 @@ po zabiegu, Flutter + FastAPI + PostgreSQL). Nie kopiujcie ich do Mood Trackera 
 
 ```
 AGENTS.md                         kontekst projektu (Copilot czyta go z katalogu głównego repo)
+github/skills/ba-analyst/         pierwsza rozmowa z klientem: decyzja, założenia, pytania, obserwacja
 github/skills/verify-claim/       sprawdź twierdzenie o kodzie: dowód = plik:linia lub wynik polecenia
 github/skills/test-first-fix/     naprawa błędu: najpierw test, który pada, potem najmniejsza poprawka
 github/skills/pr-review/          przegląd PR: poprawność, testy, bezpieczeństwo, dane zdrowotne
@@ -35,5 +36,8 @@ oraz sposobu, by sprawdzić własną pracę.
 
 W prawdziwym projekcie `AGENTS.md` leży w katalogu głównym repo, a skille w `.github/skills/`
 (tu: widoczny folder `github/`, żeby nie ukrywał go Finder). Skill można wywołać wprost:
-`/verify-claim`, `/test-first-fix`, `/pr-review`. W odpowiedzi Copilota rozwiń **References**,
+`/ba-analyst`, `/verify-claim`, `/test-first-fix`, `/pr-review`. W odpowiedzi Copilota rozwiń **References**,
 żeby zobaczyć, czy kontekst i skill zostały dołączone.
+
+Sekcja **Skills** w `AGENTS.md` pokazuje, jak wskazać agentowi, kiedy ma użyć którego skilla.
+Nowy skill: folder `.github/skills/<nazwa>/SKILL.md` + jeden wiersz w tabeli w `AGENTS.md`.
