@@ -26,8 +26,7 @@ cd mood-tracker-api && python3 -m venv venv && venv/bin/pip install -r requireme
 mkdir -p ~/dev/demo-agentic/.github
 ```
 
-Otwórz `~/dev/demo-agentic` w VS Code. Jeśli skille nie są wykrywane, włącz w ustawieniach
-`chat.useAgentSkills` (w starszych wersjach VS Code była to funkcja eksperymentalna).
+Otwórz `~/dev/demo-agentic` w VS Code.
 
 Zmiana wariantu kontekstu, zawsze w **nowej sesji czatu** (przycisk „+” w Chat):
 

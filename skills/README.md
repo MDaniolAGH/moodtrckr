@@ -26,7 +26,6 @@ Skille osobiste (dla wszystkich projektów): `~/.copilot/skills/` zamiast `.gith
   bez gwarancji, że zrobi to za każdym razem.
 - Wywołanie wprost: `/ba-questions C02`, `/verify-claim`, `/pr-review`.
 - Rozwiń **References** pod odpowiedzią, żeby sprawdzić, czy skill został załadowany.
-- Jeśli skille nie są wykrywane, włącz ustawienie `chat.useAgentSkills`.
 
 Format `SKILL.md` jest wspólny dla wielu narzędzi; te same pliki działają też w Claude Code
 (`.claude/skills/`).
