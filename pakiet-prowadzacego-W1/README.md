@@ -5,6 +5,7 @@ Kopia demo: `~/dev/demo-agentic` (commit bazowy `58747273`, branch `demo/version
 
 | Plik / folder | Do czego |
 |---------------|----------|
+| `00-SCIAGAWKA.md` | Jedna strona na zajęcia: komendy (macOS i Windows), Copilot, fakty, ratunek, slajdy w jednym zdaniu |
 | `01-SCENARIUSZ.md` | Przebieg 90 min minuta po minucie: polecenia, co sprawdzać, sabotaż, wariant awaryjny, reset |
 | `02-prompty/prompty.md` | Wszystkie prompty (P1–P8) do skopiowania |
 | `03-role/klient-poradnia.md` | Rola klienta do slajdu 22: zasady gry i ukryte fakty |
@@ -13,6 +14,7 @@ Kopia demo: `~/dev/demo-agentic` (commit bazowy `58747273`, branch `demo/version
 | `04-do-druku/karta-przewidywan.md` | Karta dla studentów do pokazu na slajdzie 12 |
 | `04-do-druku/quizy-slajdy-17-18.md` | „Potrzeba czy funkcja?” i „Wyrób medyczny czy nie?” z kluczem |
 | `05-demo-agentic/` | Konteksty (persona → profesjonalny), skille i agenci Copilota, pliki sabotażu |
+| `06-kod-demo/moodtracker-demo.bundle` | Kod demo (pełna historia git) do sklonowania bez sieci: `git clone moodtracker-demo.bundle demo-agentic` |
 
 ## Dla studentów (lokalnie w SynologyDrive: `2026/dla-studentow/`, nie w repozytorium)
 
