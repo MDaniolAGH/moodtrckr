@@ -7,6 +7,8 @@ Materiały: `05-demo-agentic/` (sabotaż, konteksty, skille, agenci), prompty w 
 
 ## 0. Przygotowanie (wieczór przed / 30 min przed zajęciami)
 
+Najpierw automatyczna próba: `05-demo-agentic/sabotaz/test_sabotazu.sh` → oczekiwane `7/7 checks`.
+
 ```bash
 # kopia demo poza SynologyDrive (z lokalnego repo; repo na GitHubie zostało usunięte)
 git clone "$HOME/SynologyDrive/AGH/Dydaktyka/Aplikacje Mobilne w Chirurgii/2026/moodtracker-handover" ~/dev/demo-agentic
@@ -195,6 +197,11 @@ git diff                                           # omów diff jak w 2.5
 git commit -qam "Add GET /version"                 # decyzja: przyjąć
 git apply "$M/sabotaz/sabotaz.patch"               # sabotaż: git diff pokaże -version / +versoin
 ```
+
+Między `git commit` a `git apply ... sabotaz.patch` odczekaj co najmniej sekundę (np. omów diff).
+Sabotaż nie zmienia długości pliku; zapisany w tej samej sekundzie co poprzednia zmiana zostaje
+zignorowany przez cache bajtkodu Pythona i serwer nadal zwraca `"version"`. Jeśli tak się stanie:
+`touch mood-tracker-api/app/main.py` i odśwież `curl`.
 
 Powiedz wprost, że pokazujesz przygotowaną zmianę, a nie wynik agenta na żywo.
 

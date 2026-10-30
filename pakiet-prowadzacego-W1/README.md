@@ -14,6 +14,8 @@ Kopia demo: `~/dev/demo-agentic` (commit bazowy `58747273`, branch `demo/version
 | `04-do-druku/karta-przewidywan.md` | Karta dla studentów do pokazu na slajdzie 12 |
 | `04-do-druku/quizy-slajdy-17-18.md` | „Potrzeba czy funkcja?” i „Wyrób medyczny czy nie?” z kluczem |
 | `05-demo-agentic/` | Konteksty (persona → profesjonalny), skille i agenci Copilota, pliki sabotażu |
+| `07-NOTATKI-slajdy-12-23.md` | Notatki do slajdów 12–23: tekst slajdu, oryginalne notatki z `Wyklad_1.pptx` i zmiany na dziś (sabotaż, interakcje, wyniki próby) |
+| `05-demo-agentic/sabotaz/test_sabotazu.sh` | Automatyczna próba sabotażu: 7 sprawdzeń, ~40 s |
 | `06-kod-demo/moodtracker-demo.bundle` | Kod demo (pełna historia git) do sklonowania bez sieci: `git clone moodtracker-demo.bundle demo-agentic` |
 
 ## Dla studentów (lokalnie w SynologyDrive: `2026/dla-studentow/`, nie w repozytorium)

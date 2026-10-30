@@ -62,6 +62,16 @@ venv/bin/python -m pytest -q tests      # oczekiwane: 1 failed, 1 passed
 
 ---
 
+## 2a. Automatyczna próba sabotażu (przed zajęciami, ~40 s)
+
+```bash
+moodtrckr/pakiet-prowadzacego-W1/05-demo-agentic/sabotaz/test_sabotazu.sh
+```
+
+Buduje tymczasową kopię z `06-kod-demo/moodtracker-demo.bundle`, dodaje endpoint, robi sabotaż
+i sprawdza 7 warunków (curl przed i po, diff, `flutter test` 28/28, `pytest` 1 failed). Nie rusza
+`~/dev/demo-agentic`. Wynik `7/7 checks` = pokaz zachowa się zgodnie z planem. Tylko macOS/Linux.
+
 ## 3. Copilot — gdzie co jest
 
 | Potrzebuję | Gdzie |
@@ -97,6 +107,7 @@ Konto testowe w aplikacji: `p01@study.example` / `demo1234`.
 | Copilot nie odpowiada / brak sieci | Wariant awaryjny: `git reset --hard 58747273`, `git apply .../sabotaz/version-endpoint.patch`, omów diff, `git commit -am "Add GET /version"`, `git apply .../sabotaz/sabotaz.patch`. Powiedz wprost, że to przygotowana zmiana. |
 | Copilot od razu pisze kod, bez planu | Też dobry materiał: „Prosiliśmy o plan. Co to mówi o zaufaniu do agenta?” Cofnij **Undo** i wyślij: „Najpierw plan, bez zmian w plikach.” |
 | Copilot zmienia więcej plików niż trzeba | Najlepszy możliwy materiał na pytanie „czy to w zakresie?”. Odrzuć zmianę na głos. |
+| Po sabotażu `curl` nadal pokazuje `"version"` | Zmiana o tej samej długości zapisana w tej samej sekundzie co poprzednia — Python używa starego `.pyc`. Odczekaj chwilę, zapisz plik jeszcze raz (albo `touch mood-tracker-api/app/main.py`), w razie potrzeby zrestartuj uvicorn. Przy ręcznej edycji praktycznie się nie zdarza; dotyczy głównie wariantu awaryjnego z dwoma patchami jeden po drugim. |
 | `curl` nie odpowiada | Czy terminal 1 z uvicorn działa? Port zajęty: `lsof -i :8000` (Windows: `netstat -ano \| findstr :8000`) |
 | `/version` zwraca 404 po zmianie | Serwer uruchomiony bez `--reload` → zrestartuj (Ctrl+C, start jeszcze raz) |
 | `git diff` po sabotażu pokazuje cały endpoint | Nie zrobiłeś commita po „przyjąć” → w edytorze cofnij `"versoin"` na `"version"`, `git commit -am "Add GET /version"`, zrób sabotaż jeszcze raz |
