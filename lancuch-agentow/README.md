@@ -70,4 +70,8 @@ Commit po krokach 4–7 według szablonu `moodtrckr/szablony/commit/`.
 - **Zamiana ról**: para wykonuje krok 3 sama, agent `architekt` recenzuje ich ADR.
 - **Przerwany łańcuch**: krok 4 robi jedna para, kroki 5–7 druga, tylko na podstawie plików w repo.
 
+Inne sposoby na ten sam workflow (prompt file `/feature`, skill `feature-development`,
+agent `koordynator` z subagentami), tryby Local / Copilot harness oraz zasady rozmieszczenia
+skilli: **`WORKFLOWS.md`**.
+
 Źródło składni: https://code.visualstudio.com/docs/agent-customization/custom-agents (handoffs).
