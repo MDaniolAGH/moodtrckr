@@ -1,0 +1,26 @@
+From 63d07f709c6c7c9e1ed9aaec97e025fcd6e099cf Mon Sep 17 00:00:00 2001
+From: Mateusz Daniol <mateuszdaniol@gmail.com>
+Date: Fri, 30 Oct 2026 05:54:03 +0100
+Subject: [PATCH] Add GET /version endpoint
+
+---
+ mood-tracker-api/app/main.py | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/mood-tracker-api/app/main.py b/mood-tracker-api/app/main.py
+index dff5a93..b284c45 100644
+--- a/mood-tracker-api/app/main.py
++++ b/mood-tracker-api/app/main.py
+@@ -94,3 +94,9 @@ def health_check() -> dict:
+     Use this to verify that the API is running.
+     """
+     return {"status": "ok", "message": "Mood Tracker API is running"}
++
++
++@app.get("/version", tags=["Health"])
++def version() -> dict:
++    """Return the service name and API version."""
++    return {"service": app.title, "version": app.version}
+-- 
+2.49.0
+

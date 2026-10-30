@@ -1,0 +1,10 @@
+diff --git a/mood-tracker-api/app/main.py b/mood-tracker-api/app/main.py
+index b284c45..afa5013 100644
+--- a/mood-tracker-api/app/main.py
++++ b/mood-tracker-api/app/main.py
+@@ -99,4 +99,4 @@ def health_check() -> dict:
+ @app.get("/version", tags=["Health"])
+ def version() -> dict:
+     """Return the service name and API version."""
+-    return {"service": app.title, "version": app.version}
++    return {"service": app.title, "versoin": app.version}
